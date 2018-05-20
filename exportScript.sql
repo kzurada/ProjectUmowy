@@ -1,0 +1,2 @@
+drop table if exists umowy;
+create table umowy (request integer not null, active varchar(255) not null, amount double precision not null, amount_period varchar(255) not null, amount_type varchar(255) not null, authorization_percent integer not null, from_date varchar(255) not null, order_number varchar(255) not null, system varchar(255), to_date varchar(255) not null, primary key (request)) engine=MyISAM;
