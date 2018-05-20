@@ -15,9 +15,6 @@ public class UmowyDbUtil {
         dataSource = theDataSource;
     }
 
-    public UmowyDbUtil() {
-
-    }
 
     public List<Umowy> getUmowy() throws Exception {
 
@@ -57,10 +54,6 @@ public class UmowyDbUtil {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        UmowyDbUtil umowyDbUtil = new UmowyDbUtil();
-        System.out.println(umowyDbUtil.getUmowy());
-    }
 
     private void close(Connection myConn, Statement myStmt, ResultSet myRs) {
 
